@@ -1,0 +1,649 @@
+
+Korttest_Led.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000041c  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00802000  0000041c  00000490  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .stab         00000714  00000000  00000000  00000490  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000085  00000000  00000000  00000ba4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 000000c0  00000000  00000000  00000c30  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000e37  00000000  00000000  00000cf0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000327  00000000  00000000  00001b27  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000010c9  00000000  00000000  00001e4e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000078  00000000  00000000  00002f18  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000355  00000000  00000000  00002f90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000006b  00000000  00000000  000032e5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macinfo 0006eda0  00000000  00000000  00003350  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000030  00000000  00000000  000720f0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	f9 c0       	rjmp	.+498    	; 0x1f4 <__ctors_end>
+   2:	00 00       	nop
+   4:	1b c1       	rjmp	.+566    	; 0x23c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	19 c1       	rjmp	.+562    	; 0x23c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	17 c1       	rjmp	.+558    	; 0x23c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	15 c1       	rjmp	.+554    	; 0x23c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	13 c1       	rjmp	.+550    	; 0x23c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	11 c1       	rjmp	.+546    	; 0x23c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	0f c1       	rjmp	.+542    	; 0x23c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	0d c1       	rjmp	.+538    	; 0x23c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	0b c1       	rjmp	.+534    	; 0x23c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	09 c1       	rjmp	.+530    	; 0x23c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	07 c1       	rjmp	.+526    	; 0x23c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	05 c1       	rjmp	.+522    	; 0x23c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	03 c1       	rjmp	.+518    	; 0x23c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	01 c1       	rjmp	.+514    	; 0x23c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	ff c0       	rjmp	.+510    	; 0x23c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	fd c0       	rjmp	.+506    	; 0x23c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	fb c0       	rjmp	.+502    	; 0x23c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	f9 c0       	rjmp	.+498    	; 0x23c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	f7 c0       	rjmp	.+494    	; 0x23c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	f5 c0       	rjmp	.+490    	; 0x23c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	f3 c0       	rjmp	.+486    	; 0x23c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	f1 c0       	rjmp	.+482    	; 0x23c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	ef c0       	rjmp	.+478    	; 0x23c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	ed c0       	rjmp	.+474    	; 0x23c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	eb c0       	rjmp	.+470    	; 0x23c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	e9 c0       	rjmp	.+466    	; 0x23c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	e7 c0       	rjmp	.+462    	; 0x23c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	e5 c0       	rjmp	.+458    	; 0x23c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	e3 c0       	rjmp	.+454    	; 0x23c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	e1 c0       	rjmp	.+450    	; 0x23c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	df c0       	rjmp	.+446    	; 0x23c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	dd c0       	rjmp	.+442    	; 0x23c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	db c0       	rjmp	.+438    	; 0x23c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	d9 c0       	rjmp	.+434    	; 0x23c <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	d7 c0       	rjmp	.+430    	; 0x23c <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	d5 c0       	rjmp	.+426    	; 0x23c <__bad_interrupt>
+  92:	00 00       	nop
+  94:	d3 c0       	rjmp	.+422    	; 0x23c <__bad_interrupt>
+  96:	00 00       	nop
+  98:	d1 c0       	rjmp	.+418    	; 0x23c <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	cf c0       	rjmp	.+414    	; 0x23c <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	cd c0       	rjmp	.+410    	; 0x23c <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	cb c0       	rjmp	.+406    	; 0x23c <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	c9 c0       	rjmp	.+402    	; 0x23c <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	c7 c0       	rjmp	.+398    	; 0x23c <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	c5 c0       	rjmp	.+394    	; 0x23c <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	c3 c0       	rjmp	.+390    	; 0x23c <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	c1 c0       	rjmp	.+386    	; 0x23c <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	bf c0       	rjmp	.+382    	; 0x23c <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	bd c0       	rjmp	.+378    	; 0x23c <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	bb c0       	rjmp	.+374    	; 0x23c <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	b9 c0       	rjmp	.+370    	; 0x23c <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	b7 c0       	rjmp	.+366    	; 0x23c <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	b5 c0       	rjmp	.+362    	; 0x23c <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	b3 c0       	rjmp	.+358    	; 0x23c <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	b1 c0       	rjmp	.+354    	; 0x23c <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	af c0       	rjmp	.+350    	; 0x23c <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	ad c0       	rjmp	.+346    	; 0x23c <__bad_interrupt>
+  e2:	00 00       	nop
+  e4:	ab c0       	rjmp	.+342    	; 0x23c <__bad_interrupt>
+  e6:	00 00       	nop
+  e8:	a9 c0       	rjmp	.+338    	; 0x23c <__bad_interrupt>
+  ea:	00 00       	nop
+  ec:	a7 c0       	rjmp	.+334    	; 0x23c <__bad_interrupt>
+  ee:	00 00       	nop
+  f0:	a5 c0       	rjmp	.+330    	; 0x23c <__bad_interrupt>
+  f2:	00 00       	nop
+  f4:	a3 c0       	rjmp	.+326    	; 0x23c <__bad_interrupt>
+  f6:	00 00       	nop
+  f8:	a1 c0       	rjmp	.+322    	; 0x23c <__bad_interrupt>
+  fa:	00 00       	nop
+  fc:	9f c0       	rjmp	.+318    	; 0x23c <__bad_interrupt>
+  fe:	00 00       	nop
+ 100:	9d c0       	rjmp	.+314    	; 0x23c <__bad_interrupt>
+ 102:	00 00       	nop
+ 104:	9b c0       	rjmp	.+310    	; 0x23c <__bad_interrupt>
+ 106:	00 00       	nop
+ 108:	99 c0       	rjmp	.+306    	; 0x23c <__bad_interrupt>
+ 10a:	00 00       	nop
+ 10c:	97 c0       	rjmp	.+302    	; 0x23c <__bad_interrupt>
+ 10e:	00 00       	nop
+ 110:	95 c0       	rjmp	.+298    	; 0x23c <__bad_interrupt>
+ 112:	00 00       	nop
+ 114:	93 c0       	rjmp	.+294    	; 0x23c <__bad_interrupt>
+ 116:	00 00       	nop
+ 118:	91 c0       	rjmp	.+290    	; 0x23c <__bad_interrupt>
+ 11a:	00 00       	nop
+ 11c:	8f c0       	rjmp	.+286    	; 0x23c <__bad_interrupt>
+ 11e:	00 00       	nop
+ 120:	8d c0       	rjmp	.+282    	; 0x23c <__bad_interrupt>
+ 122:	00 00       	nop
+ 124:	8b c0       	rjmp	.+278    	; 0x23c <__bad_interrupt>
+ 126:	00 00       	nop
+ 128:	89 c0       	rjmp	.+274    	; 0x23c <__bad_interrupt>
+ 12a:	00 00       	nop
+ 12c:	87 c0       	rjmp	.+270    	; 0x23c <__bad_interrupt>
+ 12e:	00 00       	nop
+ 130:	85 c0       	rjmp	.+266    	; 0x23c <__bad_interrupt>
+ 132:	00 00       	nop
+ 134:	83 c0       	rjmp	.+262    	; 0x23c <__bad_interrupt>
+ 136:	00 00       	nop
+ 138:	81 c0       	rjmp	.+258    	; 0x23c <__bad_interrupt>
+ 13a:	00 00       	nop
+ 13c:	7f c0       	rjmp	.+254    	; 0x23c <__bad_interrupt>
+ 13e:	00 00       	nop
+ 140:	7d c0       	rjmp	.+250    	; 0x23c <__bad_interrupt>
+ 142:	00 00       	nop
+ 144:	7b c0       	rjmp	.+246    	; 0x23c <__bad_interrupt>
+ 146:	00 00       	nop
+ 148:	79 c0       	rjmp	.+242    	; 0x23c <__bad_interrupt>
+ 14a:	00 00       	nop
+ 14c:	77 c0       	rjmp	.+238    	; 0x23c <__bad_interrupt>
+ 14e:	00 00       	nop
+ 150:	75 c0       	rjmp	.+234    	; 0x23c <__bad_interrupt>
+ 152:	00 00       	nop
+ 154:	73 c0       	rjmp	.+230    	; 0x23c <__bad_interrupt>
+ 156:	00 00       	nop
+ 158:	71 c0       	rjmp	.+226    	; 0x23c <__bad_interrupt>
+ 15a:	00 00       	nop
+ 15c:	6f c0       	rjmp	.+222    	; 0x23c <__bad_interrupt>
+ 15e:	00 00       	nop
+ 160:	6d c0       	rjmp	.+218    	; 0x23c <__bad_interrupt>
+ 162:	00 00       	nop
+ 164:	6b c0       	rjmp	.+214    	; 0x23c <__bad_interrupt>
+ 166:	00 00       	nop
+ 168:	69 c0       	rjmp	.+210    	; 0x23c <__bad_interrupt>
+ 16a:	00 00       	nop
+ 16c:	67 c0       	rjmp	.+206    	; 0x23c <__bad_interrupt>
+ 16e:	00 00       	nop
+ 170:	65 c0       	rjmp	.+202    	; 0x23c <__bad_interrupt>
+ 172:	00 00       	nop
+ 174:	63 c0       	rjmp	.+198    	; 0x23c <__bad_interrupt>
+ 176:	00 00       	nop
+ 178:	61 c0       	rjmp	.+194    	; 0x23c <__bad_interrupt>
+ 17a:	00 00       	nop
+ 17c:	5f c0       	rjmp	.+190    	; 0x23c <__bad_interrupt>
+ 17e:	00 00       	nop
+ 180:	5d c0       	rjmp	.+186    	; 0x23c <__bad_interrupt>
+ 182:	00 00       	nop
+ 184:	5b c0       	rjmp	.+182    	; 0x23c <__bad_interrupt>
+ 186:	00 00       	nop
+ 188:	59 c0       	rjmp	.+178    	; 0x23c <__bad_interrupt>
+ 18a:	00 00       	nop
+ 18c:	57 c0       	rjmp	.+174    	; 0x23c <__bad_interrupt>
+ 18e:	00 00       	nop
+ 190:	55 c0       	rjmp	.+170    	; 0x23c <__bad_interrupt>
+ 192:	00 00       	nop
+ 194:	53 c0       	rjmp	.+166    	; 0x23c <__bad_interrupt>
+ 196:	00 00       	nop
+ 198:	51 c0       	rjmp	.+162    	; 0x23c <__bad_interrupt>
+ 19a:	00 00       	nop
+ 19c:	4f c0       	rjmp	.+158    	; 0x23c <__bad_interrupt>
+ 19e:	00 00       	nop
+ 1a0:	4d c0       	rjmp	.+154    	; 0x23c <__bad_interrupt>
+ 1a2:	00 00       	nop
+ 1a4:	4b c0       	rjmp	.+150    	; 0x23c <__bad_interrupt>
+ 1a6:	00 00       	nop
+ 1a8:	49 c0       	rjmp	.+146    	; 0x23c <__bad_interrupt>
+ 1aa:	00 00       	nop
+ 1ac:	47 c0       	rjmp	.+142    	; 0x23c <__bad_interrupt>
+ 1ae:	00 00       	nop
+ 1b0:	45 c0       	rjmp	.+138    	; 0x23c <__bad_interrupt>
+ 1b2:	00 00       	nop
+ 1b4:	43 c0       	rjmp	.+134    	; 0x23c <__bad_interrupt>
+ 1b6:	00 00       	nop
+ 1b8:	41 c0       	rjmp	.+130    	; 0x23c <__bad_interrupt>
+ 1ba:	00 00       	nop
+ 1bc:	3f c0       	rjmp	.+126    	; 0x23c <__bad_interrupt>
+ 1be:	00 00       	nop
+ 1c0:	3d c0       	rjmp	.+122    	; 0x23c <__bad_interrupt>
+ 1c2:	00 00       	nop
+ 1c4:	3b c0       	rjmp	.+118    	; 0x23c <__bad_interrupt>
+ 1c6:	00 00       	nop
+ 1c8:	39 c0       	rjmp	.+114    	; 0x23c <__bad_interrupt>
+ 1ca:	00 00       	nop
+ 1cc:	37 c0       	rjmp	.+110    	; 0x23c <__bad_interrupt>
+ 1ce:	00 00       	nop
+ 1d0:	35 c0       	rjmp	.+106    	; 0x23c <__bad_interrupt>
+ 1d2:	00 00       	nop
+ 1d4:	33 c0       	rjmp	.+102    	; 0x23c <__bad_interrupt>
+ 1d6:	00 00       	nop
+ 1d8:	31 c0       	rjmp	.+98     	; 0x23c <__bad_interrupt>
+ 1da:	00 00       	nop
+ 1dc:	2f c0       	rjmp	.+94     	; 0x23c <__bad_interrupt>
+ 1de:	00 00       	nop
+ 1e0:	2d c0       	rjmp	.+90     	; 0x23c <__bad_interrupt>
+ 1e2:	00 00       	nop
+ 1e4:	2b c0       	rjmp	.+86     	; 0x23c <__bad_interrupt>
+ 1e6:	00 00       	nop
+ 1e8:	29 c0       	rjmp	.+82     	; 0x23c <__bad_interrupt>
+ 1ea:	00 00       	nop
+ 1ec:	27 c0       	rjmp	.+78     	; 0x23c <__bad_interrupt>
+ 1ee:	00 00       	nop
+ 1f0:	25 c0       	rjmp	.+74     	; 0x23c <__bad_interrupt>
+	...
+
+000001f4 <__ctors_end>:
+ 1f4:	11 24       	eor	r1, r1
+ 1f6:	1f be       	out	0x3f, r1	; 63
+ 1f8:	cf ef       	ldi	r28, 0xFF	; 255
+ 1fa:	df e3       	ldi	r29, 0x3F	; 63
+ 1fc:	de bf       	out	0x3e, r29	; 62
+ 1fe:	cd bf       	out	0x3d, r28	; 61
+ 200:	00 e0       	ldi	r16, 0x00	; 0
+ 202:	0c bf       	out	0x3c, r16	; 60
+ 204:	18 be       	out	0x38, r1	; 56
+ 206:	19 be       	out	0x39, r1	; 57
+ 208:	1a be       	out	0x3a, r1	; 58
+ 20a:	1b be       	out	0x3b, r1	; 59
+
+0000020c <__do_copy_data>:
+ 20c:	10 e2       	ldi	r17, 0x20	; 32
+ 20e:	a0 e0       	ldi	r26, 0x00	; 0
+ 210:	b0 e2       	ldi	r27, 0x20	; 32
+ 212:	ec e1       	ldi	r30, 0x1C	; 28
+ 214:	f4 e0       	ldi	r31, 0x04	; 4
+ 216:	00 e0       	ldi	r16, 0x00	; 0
+ 218:	0b bf       	out	0x3b, r16	; 59
+ 21a:	02 c0       	rjmp	.+4      	; 0x220 <__do_copy_data+0x14>
+ 21c:	07 90       	elpm	r0, Z+
+ 21e:	0d 92       	st	X+, r0
+ 220:	a0 30       	cpi	r26, 0x00	; 0
+ 222:	b1 07       	cpc	r27, r17
+ 224:	d9 f7       	brne	.-10     	; 0x21c <__do_copy_data+0x10>
+ 226:	1b be       	out	0x3b, r1	; 59
+
+00000228 <__do_clear_bss>:
+ 228:	10 e2       	ldi	r17, 0x20	; 32
+ 22a:	a0 e0       	ldi	r26, 0x00	; 0
+ 22c:	b0 e2       	ldi	r27, 0x20	; 32
+ 22e:	01 c0       	rjmp	.+2      	; 0x232 <.do_clear_bss_start>
+
+00000230 <.do_clear_bss_loop>:
+ 230:	1d 92       	st	X+, r1
+
+00000232 <.do_clear_bss_start>:
+ 232:	a0 30       	cpi	r26, 0x00	; 0
+ 234:	b1 07       	cpc	r27, r17
+ 236:	e1 f7       	brne	.-8      	; 0x230 <.do_clear_bss_loop>
+ 238:	e7 d0       	rcall	.+462    	; 0x408 <main>
+ 23a:	ee c0       	rjmp	.+476    	; 0x418 <_exit>
+
+0000023c <__bad_interrupt>:
+ 23c:	e1 ce       	rjmp	.-574    	; 0x0 <__vectors>
+
+0000023e <ioport_configure_port_pin>:
+#include "ioport_compat.h"
+
+#if defined(IOPORT_XMEGA_COMPAT)
+void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
+		port_pin_flags_t flags)
+{
+ 23e:	cf 93       	push	r28
+ 240:	df 93       	push	r29
+ 242:	ec 01       	movw	r28, r24
+ *
+ */
+#include "ioport_compat.h"
+
+#if defined(IOPORT_XMEGA_COMPAT)
+void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
+ 244:	fc 01       	movw	r30, r24
+ 246:	70 96       	adiw	r30, 0x10	; 16
+ 248:	20 e0       	ldi	r18, 0x00	; 0
+ 24a:	30 e0       	ldi	r19, 0x00	; 0
+		port_pin_flags_t flags)
+{
+	uint8_t pin;
+
+	for (pin = 0; pin < 8; pin++) {
+		if (pin_mask & (1 << pin)) {
+ 24c:	a6 2f       	mov	r26, r22
+ 24e:	b0 e0       	ldi	r27, 0x00	; 0
+ 250:	cd 01       	movw	r24, r26
+ 252:	02 2e       	mov	r0, r18
+ 254:	02 c0       	rjmp	.+4      	; 0x25a <ioport_configure_port_pin+0x1c>
+ 256:	95 95       	asr	r25
+ 258:	87 95       	ror	r24
+ 25a:	0a 94       	dec	r0
+ 25c:	e2 f7       	brpl	.-8      	; 0x256 <ioport_configure_port_pin+0x18>
+ 25e:	80 fd       	sbrc	r24, 0
+			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
+ 260:	50 83       	st	Z, r21
+ 262:	2f 5f       	subi	r18, 0xFF	; 255
+ 264:	3f 4f       	sbci	r19, 0xFF	; 255
+ 266:	31 96       	adiw	r30, 0x01	; 1
+void ioport_configure_port_pin(void *port, pin_mask_t pin_mask,
+		port_pin_flags_t flags)
+{
+	uint8_t pin;
+
+	for (pin = 0; pin < 8; pin++) {
+ 268:	28 30       	cpi	r18, 0x08	; 8
+ 26a:	31 05       	cpc	r19, r1
+ 26c:	89 f7       	brne	.-30     	; 0x250 <ioport_configure_port_pin+0x12>
+		if (pin_mask & (1 << pin)) {
+			*((uint8_t *)port + PORT_PIN0CTRL + pin) = flags >> 8;
+		}
+	}
+	/* Select direction and initial pin state */
+	if (flags & IOPORT_DIR_OUTPUT) {
+ 26e:	40 ff       	sbrs	r20, 0
+ 270:	07 c0       	rjmp	.+14     	; 0x280 <ioport_configure_port_pin+0x42>
+		if (flags & IOPORT_INIT_HIGH) {
+ 272:	41 ff       	sbrs	r20, 1
+ 274:	02 c0       	rjmp	.+4      	; 0x27a <ioport_configure_port_pin+0x3c>
+			*((uint8_t *)port + PORT_OUTSET) = pin_mask;
+ 276:	6d 83       	std	Y+5, r22	; 0x05
+ 278:	01 c0       	rjmp	.+2      	; 0x27c <ioport_configure_port_pin+0x3e>
+		} else {
+			*((uint8_t *)port + PORT_OUTCLR) = pin_mask;
+ 27a:	6e 83       	std	Y+6, r22	; 0x06
+		}
+
+		*((uint8_t *)port + PORT_DIRSET) = pin_mask;
+ 27c:	69 83       	std	Y+1, r22	; 0x01
+ 27e:	01 c0       	rjmp	.+2      	; 0x282 <ioport_configure_port_pin+0x44>
+	} else {
+		*((uint8_t *)port + PORT_DIRCLR) = pin_mask;
+ 280:	6a 83       	std	Y+2, r22	; 0x02
+	}
+}
+ 282:	df 91       	pop	r29
+ 284:	cf 91       	pop	r28
+ 286:	08 95       	ret
+
+00000288 <board_init>:
+ * \param flags Bitmask of flags specifying additional configuration
+ * parameters.
+ */
+static inline void ioport_configure_pin(port_pin_t pin, port_pin_flags_t flags)
+{
+	ioport_configure_port_pin(arch_ioport_pin_to_base(pin),
+ 288:	80 e8       	ldi	r24, 0x80	; 128
+ 28a:	96 e0       	ldi	r25, 0x06	; 6
+ 28c:	61 e0       	ldi	r22, 0x01	; 1
+ 28e:	43 e0       	ldi	r20, 0x03	; 3
+ 290:	50 e0       	ldi	r21, 0x00	; 0
+ 292:	d5 df       	rcall	.-86     	; 0x23e <ioport_configure_port_pin>
+ 294:	80 e8       	ldi	r24, 0x80	; 128
+ 296:	96 e0       	ldi	r25, 0x06	; 6
+ 298:	62 e0       	ldi	r22, 0x02	; 2
+ 29a:	43 e0       	ldi	r20, 0x03	; 3
+ 29c:	50 e0       	ldi	r21, 0x00	; 0
+ 29e:	cf df       	rcall	.-98     	; 0x23e <ioport_configure_port_pin>
+ 2a0:	80 e8       	ldi	r24, 0x80	; 128
+ 2a2:	96 e0       	ldi	r25, 0x06	; 6
+ 2a4:	64 e0       	ldi	r22, 0x04	; 4
+ 2a6:	43 e0       	ldi	r20, 0x03	; 3
+ 2a8:	50 e0       	ldi	r21, 0x00	; 0
+ 2aa:	c9 df       	rcall	.-110    	; 0x23e <ioport_configure_port_pin>
+ 2ac:	80 e8       	ldi	r24, 0x80	; 128
+ 2ae:	96 e0       	ldi	r25, 0x06	; 6
+ 2b0:	68 e0       	ldi	r22, 0x08	; 8
+ 2b2:	43 e0       	ldi	r20, 0x03	; 3
+ 2b4:	50 e0       	ldi	r21, 0x00	; 0
+ 2b6:	c3 df       	rcall	.-122    	; 0x23e <ioport_configure_port_pin>
+ 2b8:	80 e8       	ldi	r24, 0x80	; 128
+ 2ba:	96 e0       	ldi	r25, 0x06	; 6
+ 2bc:	60 e1       	ldi	r22, 0x10	; 16
+ 2be:	43 e0       	ldi	r20, 0x03	; 3
+ 2c0:	50 e0       	ldi	r21, 0x00	; 0
+ 2c2:	bd df       	rcall	.-134    	; 0x23e <ioport_configure_port_pin>
+ 2c4:	80 e8       	ldi	r24, 0x80	; 128
+ 2c6:	96 e0       	ldi	r25, 0x06	; 6
+ 2c8:	60 e2       	ldi	r22, 0x20	; 32
+ 2ca:	43 e0       	ldi	r20, 0x03	; 3
+ 2cc:	50 e0       	ldi	r21, 0x00	; 0
+ 2ce:	b7 df       	rcall	.-146    	; 0x23e <ioport_configure_port_pin>
+ 2d0:	80 e8       	ldi	r24, 0x80	; 128
+ 2d2:	96 e0       	ldi	r25, 0x06	; 6
+ 2d4:	60 e4       	ldi	r22, 0x40	; 64
+ 2d6:	43 e0       	ldi	r20, 0x03	; 3
+ 2d8:	50 e0       	ldi	r21, 0x00	; 0
+ 2da:	b1 df       	rcall	.-158    	; 0x23e <ioport_configure_port_pin>
+ 2dc:	80 e8       	ldi	r24, 0x80	; 128
+ 2de:	96 e0       	ldi	r25, 0x06	; 6
+ 2e0:	60 e8       	ldi	r22, 0x80	; 128
+ 2e2:	43 e0       	ldi	r20, 0x03	; 3
+ 2e4:	50 e0       	ldi	r21, 0x00	; 0
+ 2e6:	ab df       	rcall	.-170    	; 0x23e <ioport_configure_port_pin>
+ 2e8:	80 e6       	ldi	r24, 0x60	; 96
+ 2ea:	96 e0       	ldi	r25, 0x06	; 6
+ 2ec:	61 e0       	ldi	r22, 0x01	; 1
+ 2ee:	40 e0       	ldi	r20, 0x00	; 0
+ 2f0:	58 e1       	ldi	r21, 0x18	; 24
+ 2f2:	a5 df       	rcall	.-182    	; 0x23e <ioport_configure_port_pin>
+ 2f4:	80 e6       	ldi	r24, 0x60	; 96
+ 2f6:	96 e0       	ldi	r25, 0x06	; 6
+ 2f8:	62 e0       	ldi	r22, 0x02	; 2
+ 2fa:	40 e0       	ldi	r20, 0x00	; 0
+ 2fc:	58 e1       	ldi	r21, 0x18	; 24
+ 2fe:	9f df       	rcall	.-194    	; 0x23e <ioport_configure_port_pin>
+ 300:	80 e6       	ldi	r24, 0x60	; 96
+ 302:	96 e0       	ldi	r25, 0x06	; 6
+ 304:	64 e0       	ldi	r22, 0x04	; 4
+ 306:	40 e0       	ldi	r20, 0x00	; 0
+ 308:	58 e1       	ldi	r21, 0x18	; 24
+ 30a:	99 df       	rcall	.-206    	; 0x23e <ioport_configure_port_pin>
+ 30c:	80 e6       	ldi	r24, 0x60	; 96
+ 30e:	96 e0       	ldi	r25, 0x06	; 6
+ 310:	68 e0       	ldi	r22, 0x08	; 8
+ 312:	40 e0       	ldi	r20, 0x00	; 0
+ 314:	58 e1       	ldi	r21, 0x18	; 24
+ 316:	93 df       	rcall	.-218    	; 0x23e <ioport_configure_port_pin>
+ 318:	80 e6       	ldi	r24, 0x60	; 96
+ 31a:	96 e0       	ldi	r25, 0x06	; 6
+ 31c:	60 e1       	ldi	r22, 0x10	; 16
+ 31e:	40 e0       	ldi	r20, 0x00	; 0
+ 320:	58 e1       	ldi	r21, 0x18	; 24
+ 322:	8d df       	rcall	.-230    	; 0x23e <ioport_configure_port_pin>
+ 324:	80 e6       	ldi	r24, 0x60	; 96
+ 326:	96 e0       	ldi	r25, 0x06	; 6
+ 328:	60 e2       	ldi	r22, 0x20	; 32
+ 32a:	40 e0       	ldi	r20, 0x00	; 0
+ 32c:	58 e1       	ldi	r21, 0x18	; 24
+ 32e:	87 df       	rcall	.-242    	; 0x23e <ioport_configure_port_pin>
+ 330:	80 ee       	ldi	r24, 0xE0	; 224
+ 332:	97 e0       	ldi	r25, 0x07	; 7
+ 334:	61 e0       	ldi	r22, 0x01	; 1
+ 336:	40 e0       	ldi	r20, 0x00	; 0
+ 338:	58 e1       	ldi	r21, 0x18	; 24
+ 33a:	81 df       	rcall	.-254    	; 0x23e <ioport_configure_port_pin>
+ 33c:	80 ee       	ldi	r24, 0xE0	; 224
+ 33e:	97 e0       	ldi	r25, 0x07	; 7
+ 340:	62 e0       	ldi	r22, 0x02	; 2
+ 342:	40 e0       	ldi	r20, 0x00	; 0
+ 344:	58 e1       	ldi	r21, 0x18	; 24
+ 346:	7b df       	rcall	.-266    	; 0x23e <ioport_configure_port_pin>
+ 348:	80 e4       	ldi	r24, 0x40	; 64
+ 34a:	96 e0       	ldi	r25, 0x06	; 6
+ 34c:	60 e8       	ldi	r22, 0x80	; 128
+ 34e:	43 e0       	ldi	r20, 0x03	; 3
+ 350:	50 e0       	ldi	r21, 0x00	; 0
+ 352:	75 df       	rcall	.-278    	; 0x23e <ioport_configure_port_pin>
+ 354:	80 e4       	ldi	r24, 0x40	; 64
+ 356:	96 e0       	ldi	r25, 0x06	; 6
+ 358:	60 e2       	ldi	r22, 0x20	; 32
+ 35a:	43 e0       	ldi	r20, 0x03	; 3
+ 35c:	50 e0       	ldi	r21, 0x00	; 0
+ 35e:	6f df       	rcall	.-290    	; 0x23e <ioport_configure_port_pin>
+ 360:	80 e4       	ldi	r24, 0x40	; 64
+ 362:	96 e0       	ldi	r25, 0x06	; 6
+ 364:	60 e4       	ldi	r22, 0x40	; 64
+ 366:	40 e0       	ldi	r20, 0x00	; 0
+ 368:	50 e0       	ldi	r21, 0x00	; 0
+ 36a:	69 df       	rcall	.-302    	; 0x23e <ioport_configure_port_pin>
+ 36c:	80 ec       	ldi	r24, 0xC0	; 192
+ 36e:	97 e0       	ldi	r25, 0x07	; 7
+ 370:	68 e0       	ldi	r22, 0x08	; 8
+ 372:	43 e0       	ldi	r20, 0x03	; 3
+ 374:	50 e0       	ldi	r21, 0x00	; 0
+ 376:	63 df       	rcall	.-314    	; 0x23e <ioport_configure_port_pin>
+ 378:	80 e0       	ldi	r24, 0x00	; 0
+ 37a:	96 e0       	ldi	r25, 0x06	; 6
+ 37c:	61 e0       	ldi	r22, 0x01	; 1
+ 37e:	40 e0       	ldi	r20, 0x00	; 0
+ 380:	50 e0       	ldi	r21, 0x00	; 0
+ 382:	5d df       	rcall	.-326    	; 0x23e <ioport_configure_port_pin>
+ 384:	80 e0       	ldi	r24, 0x00	; 0
+ 386:	96 e0       	ldi	r25, 0x06	; 6
+ 388:	64 e0       	ldi	r22, 0x04	; 4
+ 38a:	40 e0       	ldi	r20, 0x00	; 0
+ 38c:	50 e0       	ldi	r21, 0x00	; 0
+ 38e:	57 df       	rcall	.-338    	; 0x23e <ioport_configure_port_pin>
+ 390:	80 e2       	ldi	r24, 0x20	; 32
+ 392:	96 e0       	ldi	r25, 0x06	; 6
+ 394:	62 e0       	ldi	r22, 0x02	; 2
+ 396:	40 e0       	ldi	r20, 0x00	; 0
+ 398:	50 e0       	ldi	r21, 0x00	; 0
+ 39a:	51 df       	rcall	.-350    	; 0x23e <ioport_configure_port_pin>
+ 39c:	80 e2       	ldi	r24, 0x20	; 32
+ 39e:	96 e0       	ldi	r25, 0x06	; 6
+ 3a0:	62 e0       	ldi	r22, 0x02	; 2
+ 3a2:	40 e0       	ldi	r20, 0x00	; 0
+ 3a4:	57 e0       	ldi	r21, 0x07	; 7
+ 3a6:	4b df       	rcall	.-362    	; 0x23e <ioport_configure_port_pin>
+ 3a8:	80 e2       	ldi	r24, 0x20	; 32
+ 3aa:	96 e0       	ldi	r25, 0x06	; 6
+ 3ac:	61 e0       	ldi	r22, 0x01	; 1
+ 3ae:	40 e0       	ldi	r20, 0x00	; 0
+ 3b0:	57 e0       	ldi	r21, 0x07	; 7
+ 3b2:	45 df       	rcall	.-374    	; 0x23e <ioport_configure_port_pin>
+ 3b4:	80 e2       	ldi	r24, 0x20	; 32
+ 3b6:	96 e0       	ldi	r25, 0x06	; 6
+ 3b8:	68 e0       	ldi	r22, 0x08	; 8
+ 3ba:	41 e0       	ldi	r20, 0x01	; 1
+ 3bc:	50 e0       	ldi	r21, 0x00	; 0
+ 3be:	3f df       	rcall	.-386    	; 0x23e <ioport_configure_port_pin>
+ 3c0:	80 e2       	ldi	r24, 0x20	; 32
+ 3c2:	96 e0       	ldi	r25, 0x06	; 6
+ 3c4:	64 e0       	ldi	r22, 0x04	; 4
+ 3c6:	40 e0       	ldi	r20, 0x00	; 0
+ 3c8:	57 e0       	ldi	r21, 0x07	; 7
+ 3ca:	39 df       	rcall	.-398    	; 0x23e <ioport_configure_port_pin>
+ 3cc:	80 ec       	ldi	r24, 0xC0	; 192
+ 3ce:	97 e0       	ldi	r25, 0x07	; 7
+ 3d0:	68 e0       	ldi	r22, 0x08	; 8
+ 3d2:	43 e0       	ldi	r20, 0x03	; 3
+ 3d4:	50 e0       	ldi	r21, 0x00	; 0
+ 3d6:	33 df       	rcall	.-410    	; 0x23e <ioport_configure_port_pin>
+ 3d8:	80 e4       	ldi	r24, 0x40	; 64
+ 3da:	96 e0       	ldi	r25, 0x06	; 6
+ 3dc:	68 e0       	ldi	r22, 0x08	; 8
+ 3de:	43 e0       	ldi	r20, 0x03	; 3
+ 3e0:	50 e0       	ldi	r21, 0x00	; 0
+ 3e2:	2d df       	rcall	.-422    	; 0x23e <ioport_configure_port_pin>
+ 3e4:	80 e4       	ldi	r24, 0x40	; 64
+ 3e6:	96 e0       	ldi	r25, 0x06	; 6
+ 3e8:	64 e0       	ldi	r22, 0x04	; 4
+ 3ea:	40 e0       	ldi	r20, 0x00	; 0
+ 3ec:	50 e0       	ldi	r21, 0x00	; 0
+ 3ee:	27 df       	rcall	.-434    	; 0x23e <ioport_configure_port_pin>
+ 3f0:	80 e6       	ldi	r24, 0x60	; 96
+ 3f2:	96 e0       	ldi	r25, 0x06	; 6
+ 3f4:	68 e0       	ldi	r22, 0x08	; 8
+ 3f6:	43 e0       	ldi	r20, 0x03	; 3
+ 3f8:	50 e0       	ldi	r21, 0x00	; 0
+ 3fa:	21 df       	rcall	.-446    	; 0x23e <ioport_configure_port_pin>
+ 3fc:	80 e6       	ldi	r24, 0x60	; 96
+ 3fe:	96 e0       	ldi	r25, 0x06	; 6
+ 400:	64 e0       	ldi	r22, 0x04	; 4
+ 402:	40 e0       	ldi	r20, 0x00	; 0
+ 404:	50 e0       	ldi	r21, 0x00	; 0
+ 406:	1b cf       	rjmp	.-458    	; 0x23e <ioport_configure_port_pin>
+
+00000408 <main>:
+ */
+#include <asf.h>
+
+int main(void)
+{
+	board_init();
+ 408:	3f df       	rcall	.-386    	; 0x288 <board_init>
+ 40a:	81 e0       	ldi	r24, 0x01	; 1
+
+__always_inline static void arch_ioport_toggle_pin_level(ioport_pin_t pin)
+{
+	PORT_t *base = arch_ioport_pin_to_base(pin);
+
+	base->OUTTGL = arch_ioport_pin_to_mask(pin);
+ 40c:	e0 e8       	ldi	r30, 0x80	; 128
+ 40e:	f6 e0       	ldi	r31, 0x06	; 6
+ 410:	87 83       	std	Z+7, r24	; 0x07
+ 412:	80 e0       	ldi	r24, 0x00	; 0
+
+
+	ioport_toggle_pin(LED0);
+
+	return 0;
+}
+ 414:	90 e0       	ldi	r25, 0x00	; 0
+ 416:	08 95       	ret
+
+00000418 <_exit>:
+ 418:	f8 94       	cli
+
+0000041a <__stop_program>:
+ 41a:	ff cf       	rjmp	.-2      	; 0x41a <__stop_program>
